@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pythonextensionswithrust"
+version = "0.1.0"
+description = ""
+authors = ["Jasper Sival <jasper.sival@alliander.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+maturin = "^0.14.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
