@@ -11,3 +11,4 @@ Cargo.lock
 venv
 .idea
 notebooks/.ipynb_checkpoints
+/src/factorial/target
