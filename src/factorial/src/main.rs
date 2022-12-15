@@ -17,32 +17,36 @@ fn main() {
     println!("The factorial of {} is {}", original_n, factorial)
 }
 
-#[test]
-fn calculate_factorial_with_5_returns_120() {
-    let number: u64 = 5;
-    let expected: u64 = 120;
+#[cfg(test)]
+mod tests {
+    use super::calculate_factorial;
+    #[test]
+    fn calculate_factorial_with_5_returns_120() {
+        let number: u64 = 5;
+        let expected: u64 = 120;
 
-    let result = calculate_factorial(number);
+        let result = calculate_factorial(number);
 
-    assert_eq!(result, expected)
-}
+        assert_eq!(result, expected)
+    }
 
-#[test]
-fn calculate_factorial_with_0_returns_1() {
-    let number: u64 = 0;
-    let expected: u64 = 1;
+    #[test]
+    fn calculate_factorial_with_0_returns_1() {
+        let number: u64 = 0;
+        let expected: u64 = 1;
 
-    let result = calculate_factorial(number);
+        let result = calculate_factorial(number);
 
-    assert_eq!(result, expected)
-}
+        assert_eq!(result, expected)
+    }
 
-#[test]
-fn calculate_factorial_with_1_returns_1() {
-    let number: u64 = 1;
-    let expected: u64 = 1;
+    #[test]
+    fn calculate_factorial_with_1_returns_1() {
+        let number: u64 = 1;
+        let expected: u64 = 1;
 
-    let result = calculate_factorial(number);
+        let result = calculate_factorial(number);
 
-    assert_eq!(result, expected)
+        assert_eq!(result, expected)
+    }
 }
