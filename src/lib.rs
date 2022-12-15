@@ -31,7 +31,7 @@ fn main() {
 /// the `lib.name` setting in the `Cargo.toml`, else Python will not be able to
 /// import the module.
     #[pymodule]
-    fn alliander_rust_functions(_py: Python, m: &PyModule) -> PyResult<()> {
+    fn rust_functions(_py: Python, m: &PyModule) -> PyResult<()> {
         m.add_function(wrap_pyfunction!(rust_fibonacci, m)?)?;
         m.add_function(wrap_pyfunction!(rust_calculate_pi, m)?)?;
 
